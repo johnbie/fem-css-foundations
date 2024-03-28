@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #ff7b54;
+  --text-on-primary: #ffffff;
+  --font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--color-primary);
+  color: var(--text-on-primary);
+  font-family: var(--font-family);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: Inter;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 36px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo nav shopping-cart";
+  align-items: center;
+  padding: 0 60px;
+}
+
+header > a {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+nav {
+  display: inline-block;
+  justify-self: end;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+}
+
+nav > ul li {
+  margin-inline-end: 36px; /* goes the other way for arabic */
+  font-size: 20px;
+}
